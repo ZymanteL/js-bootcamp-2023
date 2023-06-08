@@ -42,7 +42,7 @@ function personalGreeting(firstName, lastName, age, eyeColor) {
         this.personalLastName +
         " you are " +
         this.personalAge +
-        " years old. And you have beutiful " +
+        " years old. And you have beautiful " +
         this.personalEyeColor +
         "eye color. Have a great day!"
       );

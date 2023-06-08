@@ -1,15 +1,3 @@
-// Write 3 functions of your choice that will have following in any of them:
-
-// First function: If statements
-// Second function: Function takes at least 3 arguments.
-// Third function: Use Object key & value pairs in it.
-
-// All functions should return the value.
-
-// After finishing this, please push it to your initial repository under new branch name.
-
-// See you on Thursday!
-
 function greetings(houres) {
   if (5 <= houres && houres <= 12) {
     return "Good morning!";
@@ -41,17 +29,26 @@ function counterBmi(name, height, weight) {
 console.log(counterBmi("Lina", 178, 79));
 
 function personalGreeting(firstName, lastName, age, eyeColor) {
-    personalDetails =  {
-        personalName: firstName,
-        personalLastName: lastName,
-        personalAge: age,
-        personalEyeColor: eyeColor,
-        greeting: function() {
-            return "Hi, " + this.personalName + " " + this.lastName + " you are " + this.personalAge + " years old. And you have beutiful " + this.personalEyeColor + "eye color. Have a great day!"
-        }
-    }
-    return personalDetails.greeting()
+  personalDetails = {
+    personalName: firstName,
+    personalLastName: lastName,
+    personalAge: age,
+    personalEyeColor: eyeColor,
+    greeting: function () {
+      return (
+        "Hi, " +
+        this.personalName +
+        " " +
+        this.lastName +
+        " you are " +
+        this.personalAge +
+        " years old. And you have beutiful " +
+        this.personalEyeColor +
+        "eye color. Have a great day!"
+      );
+    },
+  };
+  return personalDetails.greeting();
 }
 
-   console.log(personalGreeting("Thomas", "Blooming", 40, "green")); 
-
+console.log(personalGreeting("Thomas", "Blooming", 40, "green"));

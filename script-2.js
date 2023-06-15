@@ -1,11 +1,11 @@
 const myArr = [
-    {id: 1, item: "Book"}
-    {id: 5, item: "Skirt"}
-    {id: 8, item: "Cup"}
-    {id: 12, item: "Bag"}
-    {id: 9, item: "Lamp"}
-    {id: 4, item: "Cream"}
-    {id: 3, item: "Bottle"}
+    {id: 1, item: "Book"},
+    {id: 5, item: "Skirt"},
+    {id: 8, item: "Cup"},
+    {id: 12, item: "Bag"},
+    {id: 9, item: "Lamp"},
+    {id: 4, item: "Cream"},
+    {id: 3, item: "Bottle"},
     {id: 11, item: "Book"}
 ];
 

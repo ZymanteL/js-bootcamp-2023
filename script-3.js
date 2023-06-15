@@ -46,7 +46,15 @@ class Cart {
     return this.cartItems;
   }
 
-  applyCupon(cuponeCode) {}
+  applyCupon(cuponeCode) {
+    if (cuponeCode === "SAVE10") {
+      return this.totalPrice() * 0.9;
+    } else if (cuponeCode === "SAVE20") {
+      return this.totalPrice() * 0.8;
+    } else if (cuponeCode === "SAVE50") {
+      return this.totalPrice() * 0.5;
+    }
+  }
 }
 
 const book = new CartItem("book", 15, 1);
@@ -56,6 +64,7 @@ const shoppingCart = new Cart();
 shoppingCart.addItem(book);
 shoppingCart.addItem(cnadle);
 shoppingCart.totalPrice();
+shoppingCart.applyCupon("SAVE50");
 shoppingCart.deleteItem("book");
 shoppingCart.updateItem("candle", 10);
 shoppingCart.updateItem("book", 1);

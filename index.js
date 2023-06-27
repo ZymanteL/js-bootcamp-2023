@@ -1,34 +1,24 @@
 import mongoose from "mongoose";
 import express from "express";
-import studentRoute from "./routes/studentRoute.js";
+import userRoute from "./routes/userRoute.js";
 
 const app = express();
-const port = 3005;
+const port = 3033;
 
 app.use(express.json())
-
-// const Student = mongoose.model("Student", studentSchema);
 
 const connectionToDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://dbUser:123@cluster0.rlpa0p0.mongodb.net/students"
+      "mongodb+srv://dbUser:123@cluster0.rlpa0p0.mongodb.net/usersNamesPasswords"
     );
     console.log("Connection to DB works!");
   } catch (error) {
     console.log(error);
   }
-
-  //   mongoose
-  //     .connect("mongodb+srv://dbUser:123@cluster0.rlpa0p0.mongodb.net/")
-  //     .then(() => {
-  //         console.log("Connection to DB works!");
-  //     }).catch((error => {
-  //         console.log(error);
-  //     }))
 };
 
-app.use("/student", studentRoute);
+app.use("/user", userRoute);
 
 app.listen(port, () => {
   connectionToDB();

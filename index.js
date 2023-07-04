@@ -4,7 +4,7 @@ import express from "express";
 import userRouter from "./routes/userRoute.js"
 
 const app = express();
-const port = 3007;
+const port = 3008;
 
 app.use(express.json());
 

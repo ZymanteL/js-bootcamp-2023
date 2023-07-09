@@ -1,0 +1,9 @@
+.MainContent {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

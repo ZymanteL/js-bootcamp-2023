@@ -1,9 +1,16 @@
-.app-header {
-    width: 100vw;
-    margin: 32px 0;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: solid;
-    color: white;
-    letter-spacing: 4px;
+.app-header-h1 {
+  width: 100vw;
+  margin: 32px 0;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: solid;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.app-header-p {
+  width: 100vw;
+  text-align: center;
+  text-decoration: solid;
+  color: white;
 }

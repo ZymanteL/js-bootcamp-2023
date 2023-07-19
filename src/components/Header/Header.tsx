@@ -1,11 +1,16 @@
-import './Header.css'
+import "./Header.css";
 
-const Hedear = () => {
-  return (
-    <>
-        <h1 className='app-header'>Todo App</h1>
-    </>
-  )
+interface HedearProps {
+  todos: Array<Todo>;
 }
 
-export default Hedear
+const Header: React.FC<HedearProps> = ({ todos }) => {
+  return (
+    <>
+      <h1 className="app-header-h1">Todo App </h1>
+      <p className="app-header-p">Remaining todos: {todos.length}</p>
+    </>
+  );
+};
+
+export default Header;

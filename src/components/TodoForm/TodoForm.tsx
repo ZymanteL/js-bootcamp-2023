@@ -27,7 +27,7 @@ export const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
         placeholder="Add your new task..."
         onChange={handleChange}
       ></input>
-      <button type="submit" className="add-todo-button" onClick={handleSubmit}>
+      <button type="submit" className="submit-button" onClick={handleSubmit}>
         Add a todo
       </button>
     </form>

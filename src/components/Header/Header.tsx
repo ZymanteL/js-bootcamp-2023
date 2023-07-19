@@ -1,10 +1,10 @@
-import React from 'react'
+import './Header.css'
 
 const Hedear = () => {
   return (
-    <div>
-        <h1>Todo App</h1>
-    </div>
+    <>
+        <h1 className='app-header'>Todo App</h1>
+    </>
   )
 }
 
